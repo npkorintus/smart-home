@@ -44,15 +44,15 @@ decreaseTemp = () => {
 
     return (
       <div className={`room ${brightness}`}>
-        the room is {this.state.isLit ? 'lit' : 'dark'}
+        <h3>The room is {this.state.isLit ? 'lit' : 'dark'}</h3>
         <br />
-        <button onClick={this.flipLight}>flip</button>
+        <button onClick={this.flipLight}>Flip</button>
         <br />
         <button onClick={this.lightOn}>ON</button>
         <br />
         <button onClick={this.lightOff}>OFF</button>
         <br />
-        <p>the current temperature is {this.state.temperature}</p>
+        <h3>The current temperature is {this.state.temperature}</h3>
         <br/>
         <button onClick={this.increaseTemp}>+</button>
         <br />
