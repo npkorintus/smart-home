@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5eb0d691e2f16780967369ac2e6eeabd",
+    "revision": "93bb47a7063f51f53cbea37d36cf8d23",
     "url": "/light-switch/index.html"
   },
   {
-    "revision": "3dba1b0de766472e6be1",
-    "url": "/light-switch/static/css/main.348705ff.chunk.css"
+    "revision": "8a7bd7a242c3fadf657d",
+    "url": "/light-switch/static/css/main.fb93e18c.chunk.css"
   },
   {
     "revision": "1ae44a692d01aff493ff",
     "url": "/light-switch/static/js/2.a8110fe6.chunk.js"
   },
   {
-    "revision": "3dba1b0de766472e6be1",
-    "url": "/light-switch/static/js/main.cc33e690.chunk.js"
+    "revision": "8a7bd7a242c3fadf657d",
+    "url": "/light-switch/static/js/main.cd737978.chunk.js"
   },
   {
     "revision": "2d8579356bc2622419c2",
