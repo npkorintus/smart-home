@@ -1,5 +1,7 @@
 # light-switch
-Light switch app using React
+Smart Home app using React & Sass
+
+[Click here to view demo](https://npkorintus.github.io/smart-home/)
 
 Quick start:
 
