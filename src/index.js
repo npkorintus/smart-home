@@ -1,69 +1,8 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
-class Room extends React.Component {
-  state = {
-    isLit: false,
-    temperature: 72,
-  }
+import App from './App';
 
-flipLight = () => {
-  this.setState({
-    isLit: !this.state.isLit
-  });
-};
+import './styles/index.scss';
 
-lightOn = () => {
-  this.setState({
-    isLit: true
-  });
-};
-
-lightOff = () => {
-  this.setState({
-    isLit: false
-  });
-};
-
-increaseTemp = () => {
-  this.setState({
-    temperature: this.state.temperature + 1
-  });
-};
-
-decreaseTemp = () => {
-  this.setState({
-    temperature: this.state.temperature - 1
-  });
-};
-
-  render() {
-    const brightness = this.state.isLit ? "lit" : "dark";
-
-    return (
-      <div className={`room ${brightness}`}>
-        <h3>The room is {this.state.isLit ? 'lit' : 'dark'}</h3>
-        <br />
-        <button onClick={this.flipLight}>Flip</button>
-        <br />
-        <button onClick={this.lightOn}>ON</button>
-        <br />
-        <button onClick={this.lightOff}>OFF</button>
-        <br />
-        <h3>The current temperature is {this.state.temperature}</h3>
-        <br/>
-        <button onClick={this.increaseTemp}>+</button>
-        <br />
-        <button onClick={this.decreaseTemp}>-</button>
-      </div>
-
-    );
-  }
-}
-
-ReactDOM.render(
-  <Room />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));

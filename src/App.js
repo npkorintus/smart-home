@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Device from './components/device';
+import Room from './components/room';
+import Thermostat from './components/thermostat';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='flex-layout'>
+        <div className='block'>
+          <h2>Lighting</h2>
+          <Room name='Living Room' />
+          <Room name='kitchen' />
+          <Room name='bedroom' />
+          <Room name='study' />
+        </div>
+        <div className='block'>
+          <h2>Climate Control</h2>
+          <Thermostat />
+        </div>
+        <div className='block'>
+          <h2>Devices</h2>
+          <Device name='Wi-fi network' />
+          <Device name='television' />
+          <Device name='home security system' />
+        </div>
+      </div>
     </div>
   );
 }
