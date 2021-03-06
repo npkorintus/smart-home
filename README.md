@@ -6,6 +6,6 @@ Smart Home app using React & Sass
 Quick start to run on local machine:
 
 - `git clone https://github.com/npkorintus/light-switch.git`
-- `cd light-switch`
+- `cd smart-home`
 - `yarn`
 - `yarn start`
